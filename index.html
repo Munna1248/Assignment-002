@@ -183,9 +183,16 @@
 
     <!-- 🧾 Text Block - nudged slightly right -->
     <div class="w-full md:w-[540px] md:ml-[32px] flex flex-col justify-center text-left z-10 h-[521px]">
-      <h2 class="noto-serif text-[40px] md:text-[50px] font-bold text-[#252432] leading-snug mb-5">
-        Flower & Plants<br>Lover
-      </h2>
+      <!-- Mobile: no break -->
+<h2 class="noto-serif text-[40px] md:text-[50px] font-bold text-[#252432] leading-snug mb-6 mt-6">
+  <span class="block md:hidden">Flower & Plants Lover</span>
+  
+  <!-- Desktop: line break -->
+  <span class="hidden md:block">
+    Flower & Plants<br>Lover
+  </span>
+</h2>
+
       <ul class="list-disc list-inside text-[#8987A1] text-[22px] leading-[36px] text-left">
   <li class="mb-[20px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
   <li class="mb-[20px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -197,6 +204,57 @@
   </div>
 </section>
 
+<!-- Latest Deal Section -->
+<section class="bg-white mt-[120px] py-16">
+  <div class="max-w-[1140px] mx-auto px-[12px]">
+
+    <!-- Title + Subtitle -->
+    <div class="text-center mb-12">
+      <h2 class="noto-serif text-[40px] font-bold leading-tight mb-4">
+        <span class="text-[#E95A08]">Latest</span>
+        <span class="text-[#000000]"> Deals</span>
+      </h2>
+      <p class="text-[#8987A1] text-[20px] leading-relaxed max-w-[700px] mx-auto">
+        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+      </p>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[24px]">
+
+      <!-- Card: Bloom -->
+      <div class="relative rounded-[12px] overflow-hidden">
+        <img src="images/deal-bloom.png" alt="Bloom Deal"
+             class="w-[367px] h-[201px] object-cover mx-auto rounded-md">
+        <div class="absolute top-[20px] left-[20px] text-white z-10">
+          <h3 class="text-[18px] font-bold">60% Off | Bloom Plant</h3>
+          <button class="mt-1 text-[#FF7043] font-medium underline">Shop Now</button>
+        </div>
+      </div>
+
+      <!-- Card: Ana -->
+      <div class="relative rounded-[12px] overflow-hidden">
+        <img src="images/deal-ana.png" alt="Ana Deal"
+             class="w-[367px] h-[201px] object-cover mx-auto rounded-md">
+        <div class="absolute top-[20px] left-[20px] text-white z-10">
+          <h3 class="text-[18px] font-bold">30% Off | Ana Plant</h3>
+          <button class="mt-1 text-[#FF7043] font-medium underline">Shop Now</button>
+        </div>
+      </div>
+
+      <!-- Card: Zabo (spans two columns) -->
+      <div class="col-span-1 md:col-span-2 relative rounded-[12px] overflow-hidden">
+        <img src="images/deal-zabo.png" alt="Zabo Deal"
+             class="w-[753px] h-[423px] object-cover mx-auto rounded-md">
+        <div class="absolute top-[32px] left-[32px] text-white z-10">
+          <h3 class="text-[20px] font-bold">25% Off | Zabo Plant</h3>
+          <button class="mt-2 text-[#FF7043] font-medium underline">Shop Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 
