@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .noto-serif {
+      font-family: 'Noto Serif', serif;
+    }
+  </style>
+  <title>Munna Assignment-002</title>
+</head>
+<body>
+
+  <header class="bg-white">
+
+    <!-- Navbar -->
+    <nav class="h-[71px]">
+      <div class="max-w-[1140px] mx-auto flex items-center justify-between h-full px-[12px] mt-6">
+
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <img src="images/logo.png" alt="Logo" class="h-[80px] w-auto">
+        </div>
+
+        <!-- Menu + Cart -->
+        <div class="flex items-center space-x-[24px]">
+          <ul class="hidden md:flex items-center space-x-[24px]">
+            <li><a href="#" class="font-bold text-[#252432] hover:text-green-600 transition">Home</a></li>
+            <li><a href="#" class="font-medium text-[#8987A1] hover:text-green-600 transition">Shop</a></li>
+            <li><a href="#" class="font-medium text-[#8987A1] hover:text-green-600 transition">About Us</a></li>
+          </ul>
+          <div class="flex items-center space-x-[6px] transform transition duration-200 hover:scale-105 hover:brightness-110 cursor-pointer">
+            <img src="images/cart-icon.png" alt="Cart Icon" class="w-6 h-6">
+            <span class="text-sm font-bold text-[#000000]">Cart ($56)</span>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="mt-[49px]">
+      <div class="max-w-[1140px] mx-auto px-[12px] flex flex-col-reverse md:flex-row items-start md:items-end justify-between space-y-6 md:space-y-0 md:h-[652px]">
+
+        <!-- Left: Title & Paragraph -->
+        <div class="w-full md:w-[570px] flex flex-col justify-end h-auto md:h-[299px] text-left">
+          <h1 class="noto-serif text-[40px] md:text-[65px] font-bold leading-tight">
+            <span class="text-[#000000]">ALWAYS </span>
+            <span class="text-[#E95A08]">FRESH</span><br>
+            <span class="text-[#E95A08]">FLOWERS</span>
+          </h1>
+          <p class="text-[#8987A1] text-[22px] mt-4 leading-relaxed">
+            Indulge your senses with the beauty and fragrance of our fresh flower shop.
+            From classic roses to exotic blooms, we offer a wide variety of fresh flowers
+            that are perfect for any occasion.
+          </p>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="w-full md:w-[570px] md:h-[355px] flex justify-center md:justify-end items-end mb-[24px] md:mb-0">
+          <img src="images/hero-flower.png" alt="Hero Flower" class="w-full md:w-[570px] h-auto md:h-[355px] object-cover">
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main class="bg-white py-16">
+  <!-- Plants Section Heading -->
+  <div class="max-w-[1140px] mx-auto px-[12px] text-center mb-12">
+    <h2 class="noto-serif text-[40px] md:text-[50px] font-bold">
+      <span class="text-[#E95A08]">Our</span> <span class="text-[#000000]">Plants</span>
+    </h2>
+    <p class="text-[#8987A1] text-[22px] mt-2 leading-relaxed">
+  Indulge your senses with the beauty and fragrance of our fresh flower shop.<br>
+  From classic roses to exotic blooms, we offer a wide variety of fresh.
+    </p>
+  </div>
+
+  <!-- Product Grid -->
+  <div class="max-w-[1140px] mx-auto px-[12px] grid grid-cols-2 md:grid-cols-4 gap-[24px]">
+
+    <!-- Card 1 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Lily Blossom</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$20</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Rose Harmony" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Rose Harmony</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$22</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Orchid Mist" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Orchid Mist</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$18</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Tulip Dream" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Tulip Dream</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$16</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Sunflower Joy" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Sunflower Joy</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$19</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Peony Grace" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Peony Grace</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$25</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Lavender Love" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Lavender Love</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$21</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="bg-[#F5F5F5] p-4 rounded-lg text-center hover:shadow-lg transition duration-200">
+      <img src="images/sample-flower-image.png" alt="Daisy Delight" class="w-full h-auto mb-4 rounded-md">
+      <h3 class="text-[#252432] font-bold text-lg mb-1">Daisy Delight</h3>
+      <p class="text-[#252432] font-bold text-base mb-4">$17</p>
+      <button class="bg-[#E95A08] text-white w-full py-3 text-sm font-semibold rounded hover:bg-orange-600 hover:shadow-md hover:scale-[1.02] transition duration-200">
+        ADD TO CART
+      </button>
+    </div>
+
+  </div>
+</main>
+
+
+</body>
+</html>
